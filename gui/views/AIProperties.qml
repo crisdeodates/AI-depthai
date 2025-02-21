@@ -1,5 +1,5 @@
 import QtQuick 2.0
-import QtQuick.Layouts 1.11
+import QtQuick.Layouts 1.3
 import QtQuick.Controls 2.1
 import QtQuick.Window 2.1
 import QtQuick.Controls.Material 2.1
@@ -159,14 +159,12 @@ ListView {
             id: aiAdvancedSwitch
             x: 167
             y: 228
-            text: qsTr("Show advanced options")
+            text: qsTr("<font color=\"white\">Show advanced options</font>")
             font.family: "Courier"
             autoExclusive: false
             transformOrigin: Item.Center
             font.pointSize: 21
             checked: false
-            font.preferShaping: false
-            font.kerning: false
         }
 
         Rectangle {
@@ -238,12 +236,10 @@ ListView {
                 y: 375
                 width: 250
                 height: 48
-                text: qsTr("Spatial Bounding Boxes")
+                text: qsTr("<font color=\"white\">Spatial Bounding Boxes</font>")
                 font.family: "Courier"
                 autoExclusive: false
                 transformOrigin: Item.Center
-                font.preferShaping: false
-                font.kerning: false
                 onToggled: {
                     aiBridge.setSbb(switch3.checked)
                 }
@@ -301,13 +297,11 @@ ListView {
             y: 0
             width: 167
             height: 38
-            text: qsTr("Enabled")
+            text: qsTr("<font color=\"white\">Enabled</font>")
             checked: true
             autoExclusive: false
             font.family: "Courier"
-            font.kerning: false
             transformOrigin: Item.Center
-            font.preferShaping: false
             onToggled: {
                 appBridge.toggleNN(switch5.checked)
             }
